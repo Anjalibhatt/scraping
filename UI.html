@@ -1,0 +1,40 @@
+<?php 
+	include_once 'Dynamic_dropbox.php';
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			 $(".url").click(function(){
+				var c_url = $("#competitor").val();
+					alert(c_url);
+					 $("#competitor").val(0);
+				});
+		});
+	</script>
+	<style>
+		.wrapper {
+			  margin-top:70px;
+			  background: white;
+			  margin-left:600px;
+			  padding: 2em;
+			  width: 80%;
+			}
+		
+	</style>
+	</head>
+	<body>
+		<form class="wrapper">
+			<select id="competitor">
+				<option value=0>Select</option>
+				<option value="http://www.ldproducts.com">ldproducts</option>
+				<option value="http://www.suppliesoutlet.com">Suppliesoutlet</option>
+				<option value="http://tonerprice.com">tonerprice</option>
+			</select><br/><br/>
+				<input type="submit" value="tsg Urls" name="T_urls" class="url">
+				<input type="submit" value="All Urls" name="A_urls" class="url">
+		</form>
+	</body>
+</html>
